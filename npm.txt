@@ -1,0 +1,4 @@
+electron --save-dev
+-g electron
+bootstrap
+axios
