@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Transcript Summarizer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS bağlantısı -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-item">
+          <a target="_blank" href="https://www.youtube.com/" class="logo">
+            <img src="./img/logo.png" alt="" />
+            <p>Video Translate</p>
+          </a>
+          <a class="insatgram-link" target="_blank" href="https://www.instagram.com/omertrhhn/">
+            <img src="./img/insta.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper container">
+      <!-- Hoşgeldiniz Sayfası -->
+      <div id="welcome-page">
+        <div class="card">
+          <div class="top-box">
+            <h1>Welcome to the App!</h1>
+          </div>
+          <div class="middle-box">
+            <p>Let's explore the great features of this app.</p>
+          </div>
+          <div class="bottom-box">
+            <button id="start-button" class="btn btn-custom">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube Link İsteme Sayfası -->
+      <div id="link-page" class="hidden">
+        <div class="card">
+          <div class="top-box">
+            <h2>Enter YouTube Video URL</h2>
+          </div>
+          <div class="middle-box">
+            <input
+              type="text"
+              id="video-url"
+              class="form-control mb-3"
+              placeholder="https://www.youtube.com/watch?v=..."
+            />
+            <label for="target-language">Select Target Language (for Translation):</label>
+            <select id="target-language" class="form-control">
+              <option value="">None</option>
+              <option value="en">English</option>
+              <option value="tr">Turkish</option>
+            </select>
+          </div>
+          <div class="bottom-box">
+            <button id="fetch-button" class="btn btn-custom">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transkript Gösterme Sayfası -->
+      <div id="transcript-page" class="hidden">
+        <div class="card">
+          <div class="top-box">
+            <h2>Transcript</h2>
+          </div>
+          <div class="middle-box">
+            <textarea id="transcript" class="form-control mb-3" rows="10" readonly></textarea>
+            <label for="translated-transcript">Translated Transcript:</label>
+            <textarea
+              id="translated-transcript"
+              class="form-control mb-3"
+              rows="10"
+              readonly
+            ></textarea>
+          </div>
+          <div class="bottom-box">
+            <button id="show-summary-button" class="btn btn-custom">Show Summary</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Özet Gösterme Sayfası -->
+      <div id="summary-page" class="hidden">
+        <div class="card">
+          <div class="top-box">
+            <h2>Summary</h2>
+          </div>
+          <div class="middle-box">
+            <textarea id="summary" class="form-control mb-3" rows="10" readonly></textarea>
+            <label for="translated-summary">Translated Summary:</label>
+            <textarea id="translated-summary" class="form-control" rows="10" readonly></textarea>
+          </div>
+          <div class="bottom-box">
+            <button id="restart-button" class="btn btn-danger">Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
