@@ -37,6 +37,8 @@ Run the following commands to install the necessary Node.js modules:
    npm install -g electron
    npm install bootstrap
    npm install axios
+   npm install deepl-node
+
 
    
 
