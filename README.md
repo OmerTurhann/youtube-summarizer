@@ -19,8 +19,8 @@ Installation Guide
 Step 1: Clone the Repository
 First, clone this repository from GitHub:
 
-git clone https://github.com/<your-github-username>/<your-repository-name>.git
-cd <your-repository-name>
+git clone git@github.com:OmerTurhann/youtube-summarizer.git
+cd OmerTurhann/youtube-summarizer.git
 
 
 Step 2: Install Node.js Dependencies
