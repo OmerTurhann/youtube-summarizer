@@ -33,7 +33,6 @@ Run the following commands to install the necessary Node.js modules:
 
 2. Install the required Node.js packages:
    npm install
-   npm install electron --save-dev
    npm install -g electron
    npm install bootstrap
    npm install axios
