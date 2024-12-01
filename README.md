@@ -46,10 +46,16 @@ The application uses Python for fetching YouTube transcripts. Set up a virtual P
 1. Create and activate the virtual environment:
    python3 -m venv myenv
    source myenv/bin/activate
+
+   Gitbash:
+   python -m venv env
+   source env/Scripts/activate
+
  
 
-2. Install Python dependencies from `requirements.txt`:
-
+3. Install Python dependencies from `requirements.txt`:
+   sudo apt update
+   sudo apt install python3-pip
    pip install -r requirements.txt
 
 
